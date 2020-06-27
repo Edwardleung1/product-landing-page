@@ -1,11 +1,48 @@
-#nav-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-
 ul {
+    list-style-type: none;
     margin: 0;
     padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+li {
+    float: right;
+}
+a {
+    display: block;
+    padding: 8px;
+    margin: 8px;
+}
+li a:hover {
+   color: #111;
+}
+#header-img {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100px;
+    width: 100px;
+}
+body {
+    text-align: center;
+    margin-top: 6em;
+}
+#form {
+    display: inline-block;
+}
+@media screen and (max-width: 600px) {
+    li {
+        float: none;
+        display: block;
+        text-align: center;
+        overflow: hidden;
+        background-color: #333;
+    }
+    a {
+        color: white;
+    }
+    a:active {
+        background-color: #4caf50;
+    }
 }
