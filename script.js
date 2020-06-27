@@ -15,3 +15,15 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
+
+function validate () {
+    let text = document.getElementById('email').nodeValue;
+
+    let regex = /^([a-z 0-9\.-]+)@([a-z0-9-]+).([a-z]{2,8})(.[a-z]{2,8})?$/;
+        if(regex.test(text)) {
+            document.getElementById('error').innerHTML="Valid Email";
+        }
+        else {
+            document.getElementById('error').innerHTML="Invalid Email";
+        }
+}
